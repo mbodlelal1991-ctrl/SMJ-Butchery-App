@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 520px;
+  margin: 0 auto;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 2px;
+  text-align: center;
+  color: #7a1f1f;
+}
+
+.subtitle {
+  text-align: center;
+  color: #888;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 16px;
+  color: #333;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#orderForm input {
+  width: 100%;
+}
+
+.order-type-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.orderTypeBtn {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+.orderTypeBtn.active {
+  border-color: #7a1f1f;
+  background: #fbeaea;
+  color: #7a1f1f;
+}
+
+.orderTypeBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.order-type-note {
+  font-size: 13px;
+  color: #a3651a;
+  margin-top: 8px;
+  min-height: 16px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-item-name {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.weightInput {
+  width: 60px;
+  text-align: center;
+}
+
+.addBtn {
+  background: #2a7d46;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.addBtn:hover {
+  background: #226238;
+}
+
+.cart-section {
+  margin-top: 24px;
+  background: #fafafa;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.empty-cart {
+  color: #999;
+  font-size: 14px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.removeCartBtn {
+  background: none;
+  border: none;
+  color: #a00;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-total {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: right;
+  color: #222;
+}
+
+#submitBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #7a1f1f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background: #601717;
+}
+
+#submitBtn:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+#responseMessage {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: none;
+}
+
+#responseMessage.success {
+  display: block;
+  background: #e3f5e8;
+  color: #1e6b34;
+  border: 1px solid #b6e3c3;
+}
+
+#responseMessage.error {
+  display: block;
+  background: #fbe7e7;
+  color: #a3312f;
+  border: 1px solid #f0bcbc;
+}
