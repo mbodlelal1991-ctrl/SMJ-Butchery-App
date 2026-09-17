@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMJ Butchery - Order Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>SMJ Butchery</h1>
+    <p class="subtitle">Order your braai and raw meat online</p>
+
+    <div class="order-type-section">
+      <label>Order Type</label>
+      <div class="order-type-buttons">
+        <button type="button" class="orderTypeBtn active" data-type="sit-in">Sit-in</button>
+        <button type="button" class="orderTypeBtn" data-type="takeaway">Takeaway</button>
+      </div>
+      <p id="orderTypeNote" class="order-type-note"></p>
+    </div>
+
+    <div class="menu-section">
+      <h2>Braai (Cooked) - sold by weight</h2>
+      <div id="braaiMenu" class="menu-list"></div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Raw Meat - takeaway only, sold by weight</h2>
+      <div id="rawMenu" class="menu-list"></div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Sides &amp; Drinks</h2>
+      <div id="sideMenu" class="menu-list"></div>
+    </div>
+
+    <div class="cart-section">
+      <h2>Your Order</h2>
+      <div id="cartItems">
+        <p class="empty-cart">No items added yet.</p>
+      </div>
+      <div class="cart-total">Total: R<span id="cartTotal">0.00</span></div>
+    </div>
+
+    <form id="orderForm">
+      <label for="customerName">Your Name</label>
+      <input type="text" id="customerName" placeholder="John Smith" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="0821234567" required>
+
+      <button type="submit" id="submitBtn">Place Order</button>
+    </form>
+
+    <div id="responseMessage"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
