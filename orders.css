@@ -1,0 +1,149 @@
+.dashboard {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 22px;
+  color: #7a1f1f;
+}
+
+#refreshBtn {
+  background: #7a1f1f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#refreshBtn:hover {
+  background: #601717;
+}
+
+#loadingMsg {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
+
+.error-banner {
+  display: none;
+  background: #fbe7e7;
+  color: #a3312f;
+  border: 1px solid #f0bcbc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  border-left: 6px solid #ccc;
+}
+
+.order-card.status-received { border-left-color: #d9822b; }
+.order-card.status-preparing { border-left-color: #2a5d9f; }
+.order-card.status-ready { border-left-color: #2a7d46; }
+.order-card.status-completed { border-left-color: #999; opacity: 0.6; }
+
+.order-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.order-id {
+  font-weight: 700;
+  font-size: 15px;
+  color: #222;
+}
+
+.order-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.order-customer {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.order-phone {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.order-type-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.order-type-badge.order-type-sitin {
+  background: #f3e8fb;
+  color: #6a2fa3;
+}
+
+.order-type-badge.order-type-takeaway {
+  background: #e8f0fb;
+  color: #1f4a80;
+}
+
+.order-items {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.status-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.status-badge.status-received { background: #fdecd8; color: #a3651a; }
+.status-badge.status-preparing { background: #dce8f7; color: #1f4a80; }
+.status-badge.status-ready { background: #dff2e4; color: #1e6b34; }
+.status-badge.status-completed { background: #eee; color: #777; }
+
+.order-actions button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.order-actions button:hover {
+  background: #f0f0f0;
+}
+
+.order-actions button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
